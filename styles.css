@@ -1,30 +1,41 @@
 /* General styles */
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #1a1a1a;
+ 
+  font-family: "Poetsen One", sans-serif;
+  margin: 20px;
+  padding: 70px;
+  background: linear-gradient(#ffc0cb, #fd2347);
   color: #ffffff;
 }
 
+
+
+
+
 /* Navbar */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #6a0dad;
+  display:flex;
+  justify-content:center;
+  align-items:normal;
+  /*padding: 5px;*/
+  background-image: radial-gradient(circle at 37.72% 119.64%, #ff00dc 0, #ea00d6 16.67%, #bd00ca 33.33%, #8c07b8 50%, #5b0ca3 66.67%, #240f8f 83.33%, #00107d 100%);
 }
 
 header .logo {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
+ text-justify:inter-word;
+ align-items:end;
+ 
+
+  padding: 5px 50px;
   color: #ffffff;
 }
 
 .navbar {
   list-style: none;
   display: flex;
+
   gap: 30px;
 }
 
@@ -40,20 +51,20 @@ header .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 78px 45px;
-  background-color: #4b0082;
+  padding: 0px 45px;
+  background-color: #ffffff;
 }
 
 .home-text h1 {
-  font-size: 80px;
-  text-align: center;
-  color: #ffffff;
+  font-size: 100px;
+  text-align:center;
+  color: #4f0f4d;
 }
 
 .home-text h2 {
   font-size: 29px;
   text-align: center;
-  color: #e6e6fa;
+  color: #500c3d;
 }
 
 .button-container {
@@ -62,7 +73,7 @@ header .logo {
 }
 
 .home-img img {
-  max-width: 90%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -71,29 +82,34 @@ header .logo {
   display: flex;
   align-items: center;
   padding: 80px 40px;
-  background-color: #8a2be2; /* Color de fondo morado */
+  background-color: #ad8dcb; /* Color de fondo morado */
 }
 
 .about-img {
   flex: 1; /* Ocupa la mitad del espacio */
-  margin-right: -20x; /* Espacio a la derecha de la imagen */
+  margin-right: -50px; /* Espacio a la derecha de la imagen */
+  margin-left: 50px;
+  align-items:end;
 }
 
 .about-img img {
-  width: 100%; /* Ocupa todo el ancho disponible */
+  width: 90%; /* Ocupa todo el ancho disponible */
 }
 
 .about-text {
-  flex: 1; /* Ocupa la otra mitad del espacio */
+  flex: 2; /* Ocupa la otra mitad del espacio */
   text-align: justify; /* Justifica el texto */
+  align-items: center;
 }
 
 
 .about-text h2 {
   font-size: 38px; /* Tamaño del título */
-  color: #ffffff; /* Color de texto blanco */
+  color: #340e7a; /* Color de texto blanco */
   margin-bottom: 10px; /* Espacio entre el título y el párrafo */
 }
+
+
 
 .about-text p {
   font-size: 22px; /* Tamaño del texto normal */
@@ -111,7 +127,7 @@ header .logo {
 
 .games {
   padding: 100px 20px;
-  background-color: #9932cc;
+  background-image: linear-gradient(5deg, #b8c97b 0, #adcb80 3.33%, #a1ce87 6.67%, #95d08e 10%, #89d197 13.33%, #7cd3a0 16.67%, #6ed4aa 20%, #60d5b5 23.33%, #52d5bf 26.67%, #43d6ca 30%, #34d5d4 33.33%, #26d5de 36.67%, #1dd4e8 40%, #1fd3f1 43.33%, #2bd2f8 46.67%, #3cd0ff 50%, #4eceff 53.33%, #61cbff 56.67%, #73c9ff 60%, #85c6ff 63.33%, #96c2ff 66.67%, #a6bfff 70%, #b6bbff 73.33%, #c5b7ff 76.67%, #d2b3fd 80%, #dfb0f7 83.33%, #e9acef 86.67%, #f3a9e6 90%, #fba7dc 93.33%, #ffa5d2 96.67%, #ffa4c8 100%);
   text-align: center; /* Centrar el contenido */
 }
 
@@ -121,9 +137,9 @@ header .logo {
   gap: 20px;
   justify-content: center; /* Centrar las cajas horizontalmente */
 }
-
+/*CAJAS DONDE ESTAN LOS VIDEOJUEGOS*/
 .box {
-  background-color: #6a0dad;
+  background-color: #401a64;
   padding: 20px;
   border-radius: 10px;
   width: calc(30% - 20px); /* 30% del ancho con un margen de 20px */
@@ -147,18 +163,18 @@ header .logo {
   border-radius: 5px;
 }
 
-.btn:hover {
+.btn:hover {/*CAMBIA COLORES DEL BOTON AL SER PRECIONADO*/
   letter-spacing: 3px;
   background-color: #5d18dc;
-  color: #fff;
-  box-shadow: #5d15dc 0px 7px 29px 0px;
+  color: #fff;/*color de la letra*/
+  box-shadow: #be84c1 0px 7px 29px 0px;
 }
 
 .btn:active{
   letter-spacing: 3px;
-  background-color: #5d18dc; 
-  color: #fff;
-  box-shadow: #5d15dc 0px 0px 0px 0px; 
+  background-color: #7c73a9; 
+  color: #ffffff;
+  box-shadow: #ffe100 0px 0px 0px 0px; 
   transform: translateY(10px);
   transition: 100ms;
 }
@@ -166,7 +182,8 @@ header .logo {
 /* Game details section */
 .game-details {
   padding: 100px 20px;
-  background-color: #8a2be2;
+  background-image: radial-gradient(circle at 120.71% 50%, #ce3eca 0, #b029c3 25%, #8c07b8 50%, #6300ae 75%, #3000a6 100%);
+  /*background-color: #300657;*/
 }
 
 .game-details .heading {
@@ -177,34 +194,58 @@ header .logo {
 .game-details .heading h2 {
   font-size: 36px;
   color: #ffffff;
+  text-align: center;
 }
 
-.game-details .content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+.game-details .content {/*MUEVE EL TEXTO DESCRIPTIVO zelda*/
+  display:inline-flex ;
+  font-size: 20px;
+  color: #e6e6fa;
+  width: 100%;
+  justify-content: center;
+  text-align: justify;
+  margin-top: 35px;
+  margin-left: 10px;
+  
+  
 }
 
 .game-details .content img {
   max-width: 50%;
   height: auto;
+  justify-items: center;
 }
 
 .game-details .content p {
-  font-size: 18px;
+  
+  font-size: 20px;
   color: #e6e6fa;
-  width: 50%;
-  text-align: justify;  /* Añadido para justificar el texto */
+  width: 88%;
+  justify-content:center;
+
+  text-align: justify; /* Añadido para justificar el texto */
+  gap: 5px;
+  margin-top: 80px;
+  margin-left: 25px;
+  
+}
+
+.game-details .game-details video{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
 }
 
 /* Contact section */
 .contact {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 100px 20px;
-  background-color: #6a0dad;
+  justify-content:center;
+  align-items:center;
+  padding: 45px 20px;
+  background-color: #270338;
 }
 
 .contact-box {
@@ -237,7 +278,7 @@ header .logo {
 .copyright {
   text-align: center;
   padding: 20px;
-  background-color: #4b0082;
+  background-color: #9654c5;
 }
 
 .copyright p {
